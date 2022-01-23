@@ -1,0 +1,113 @@
+@import "reset.css";
+.hidden {
+    display: none;
+}
+
+img {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    z-index: 1;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#todo-form {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+}
+
+#todo-form input {
+    background-color: cornsilk;
+    font-size: 25px;
+    border-radius: 15px
+}
+
+#todo-list {
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+}
+
+#login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+}
+
+#login-form input {
+    background-color: cornsilk;
+    z-index: 2;
+    font-size: 25px;
+    border-radius: 15px
+}
+
+#login-form button {
+    background-color: cornsilk;
+    font-size: 25;
+    border-radius: 15px
+}
+
+#greeting {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 40px;
+}
+
+#clock {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 170px;
+}
+
+#quote {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 15x;
+}
+
+#weather {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 15px;
+}
