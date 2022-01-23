@@ -2,21 +2,23 @@
 .hidden {
     display: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400&display=swap');
 
 img {
     margin: 0 auto;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
+    width: 100vh;
+    height: 100vh;
     z-index: 1;
+    filter: brightness(30%);
 }
 
 body {
-    font-family: sans-serif;
     margin: 0 auto;
     color: rgb(255, 255, 255);
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -25,56 +27,130 @@ ul {
 
 #todo-form {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    text-align: center;
-    font-size: 25px;
 }
 
 #todo-form input {
-    background-color: cornsilk;
-    font-size: 25px;
-    border-radius: 15px
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 540px;
+    height:40px;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 500;
+    border:none;
+    margin-bottom:20px;
+    margin-top:-50px;
+    transition: all, 0.4s;
+}
+
+#todo-form input:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+#todo-form input:hover::-webkit-input-placeholder{ 
+    color: rgb(50, 50, 50);
+}
+#todo-form input:focus{
+    outline:none;
+    border-bottom: 1px solid white;
+    background-color:rgba(0,0,0,0);
 }
 
 #todo-list {
+    font-family: 'Source Serif Pro', serif;
     position: absolute;
-    top: 70%;
-    left: 85%;
+    top: 30%;
+    left: 80%; 
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
+}
+
+#todo-list li{
+    list-style: none;
+    color:rgba(250,250,250,0.8);
+    margin-top:40px;
+    margin-bottom:50px;
+    font-size:1rem;
+    width:540px;
+    margin: 0 auto;
+}
+
+#todo-list button {
+    margin-left:10px;
+    background-color:rgba(255,255,255,0);
+    outline: none;
+    color:white;
+    font-weight: 700;
+    width:30px;
+    height:30px;
+    border:none;
+    font-size:1.2rem;
 }
 
 #login-form {
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 30px;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
     font-size: 25px;
 }
 
+
 #login-form input {
-    background-color: cornsilk;
-    z-index: 2;
-    font-size: 25px;
-    border-radius: 15px
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 400px;
+    height:40px;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 500;
+    border:none;
+    margin-bottom:20px;
+    margin-top:-50px;
+    transition: all, 0.4s;
 }
+    #login-form input:hover{
+        background-color: rgba(255,255,255,0.4);
+    }
+    #login-form input:hover::-webkit-input-placeholder{ 
+        color: rgb(50, 50, 50);
+    }
+    #login-form input:focus{
+        outline:none;
+        border-bottom: 1px solid white;
+        background-color:rgba(0,0,0,0);
+    }
 
 #login-form button {
-    background-color: cornsilk;
-    font-size: 25;
-    border-radius: 15px
+    background-color: rgba(255,255,255,0.1);
+    height: 40px;
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    border-style: none;
+    color: rgb(235, 235, 235);
+    transition: all, 0.4s;
+
 }
+    #login-form button:hover{
+        background-color: rgba(255,255,255,0.4);
+        color: rgb(50, 50, 50);
+    }
+
 
 #greeting {
+    font-family: 'Source Serif Pro', serif;
+    color: white;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -83,26 +159,29 @@ ul {
 }
 
 #clock {
+    font-family: 'Source Serif Pro', serif;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    font-size: 170px;
+    font-size: 150px;
 }
 
 #quote {
+    font-family: 'Source Serif Pro', serif;
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    font-size: 15x;
+    font-size: 18px;
 }
 
 #weather {
+    font-family: 'Source Serif Pro', serif;
     position: absolute;
     top: 10%;
     left: 90%;
